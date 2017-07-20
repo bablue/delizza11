@@ -1,0 +1,59 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background-image: url(../images/Indian-Food.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 100vh;
+}
+.container-fluid{
+	color: #ffcb27;
+}
+.sign_inbar{
+	background-color:  #f6422f;
+}
+input[class^="sign_inbar"]{
+	border-radius: 1vw;
+	text-indent:1vw;
+}
+input[class^="sign_inbar"]:focus{
+	outline:none;
+}
+[class*="sign_inbar_container"]{
+	margin: .2vw;
+}
+.sign_inbar_heading_container h1{
+	font-family: cursive;
+    font-size: 2vw;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;    
+}
+.input_group_sign_inbar{
+	margin-top: .7vw;
+	padding-bottom: 2vw;
+}
+
+[class*="sign_inbar_container"] label{
+	font-size: 1.6vw;
+}
+.sign_up_form_container{
+	background: rgba(255,255,255,.4);
+    padding: 2vw;
+}
+.sign_up_bar{
+		margin: 5vw 0vw;
+}
+@media screen and (max-width:767px){
+	.sign_inbar, .sign_up_bar{
+		margin: 5vw 0vw;
+		/*margin: auto;*/
+	}
+	[class*="sign_inbar_container"] label{
+		font-size: 3vw;
+    }
+    .sign_inbar_heading_container h1{
+    	font-size: 5vw;
+    }	
+}
